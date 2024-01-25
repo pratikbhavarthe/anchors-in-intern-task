@@ -1,23 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Emoji from "./components/Emoji";
+import HomePage from "./pages/Home";
+import LoginPage from "./pages/LoginPage";
+import SignupPage from "./pages/SignupPage";
+import UserDashBoard from "./pages/UserPanel";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div className="text-white ">
+      <header className="flex sticky top-0 items-center justify-between p-4 bg-black shadow-md z-10">
+        <div className="flex items-center">
+          <Emoji symbol="☰" label="menu" className="text-2xl" />
+          <span className="px-2">ANONYMOUS</span>
+        </div>
+        <div className="ml-2">
+          <Emoji symbol="🧑🏻‍💻" label="user" className="text-2xl" />
+        </div>
       </header>
+      <Router>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/login" element={<LoginPage />} />
+          <Route path="/signup" element={<SignupPage />} />
+          <Route path="/dashboard" element={<UserDashBoard/>} />
+        </Routes>
+      </Router>
     </div>
   );
 }
