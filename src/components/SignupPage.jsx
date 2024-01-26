@@ -3,7 +3,7 @@ import { FaRocket } from "react-icons/fa";
 import { FaArrowRight } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
-const SignUpPage = () => {
+const SignupPage = () => {
   return (
     <div className="h-screen bg-black text-white flex flex-col items-center">
       <div className="flex flex-col items-center justify-center gap-5 rounded-lg bg-[#191919] p-12 mt-12">
@@ -42,4 +42,4 @@ const SignUpPage = () => {
   );
 };
 
-export default SignUpPage;
+export default SignupPage;
