@@ -8,15 +8,15 @@ import OTP from "./components/OTP";
 import UpdatePassword from "./components/UpdatePassword";
 import AccountCreated from "./components/AccountCreated";
 import CreatePost from "./components/Createpost";
-import AllPosts from "./components/AllPosts";
 import PostView from "./components/PostView";
 import ResetOTP from "./components/ResetOTP";
-import Format from "./components/Formatormat";
+import Style from "./components/Style";
+import AllPost from "./components/AllPost";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Format/>,
+    element: <Style/>,
     children: [
       { index: true, element: <Home /> },
       { path: "/signup", element: <SignupPage /> },
@@ -27,7 +27,7 @@ const router = createBrowserRouter([
       { path: "/otp", element: <OTP /> },
       { path: "/account-created", element: <AccountCreated /> },
       { path: "/create-post", element: <CreatePost /> },
-      { path: "/posts", element: <AllPosts /> },
+      { path: "/posts", element: <AllPost /> },
       { path: "/post", element: <PostView /> },
       { path: "/commented-post", element: <PostView /> },
       { path: "/replied-post", element: <PostView /> },
