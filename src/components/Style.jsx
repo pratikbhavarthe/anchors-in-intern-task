@@ -2,7 +2,7 @@ import React from 'react'
 import { Outlet } from 'react-router-dom'
 import Navbar from './Navbar'
 
-const Format = () => {
+const Style = () => {
   return (
     <div>
     <Navbar/>
@@ -11,4 +11,4 @@ const Format = () => {
   )
 }
 
-export default Format
+export default Style

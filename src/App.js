@@ -1,6 +1,5 @@
 import "./App.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Layout from "./components/Layout";
 import Home from "./components/Home";
 import SignupPage from "./components/SignupPage";
 import Login from "./components/Login";
@@ -12,11 +11,12 @@ import CreatePost from "./components/Createpost";
 import AllPosts from "./components/AllPosts";
 import PostView from "./components/PostView";
 import ResetOTP from "./components/ResetOTP";
+import Format from "./components/Formatormat";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Layout/>,
+    element: <Format/>,
     children: [
       { index: true, element: <Home /> },
       { path: "/signup", element: <SignupPage /> },
