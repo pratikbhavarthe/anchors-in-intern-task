@@ -5,7 +5,7 @@ import { TbCirclePlus } from "react-icons/tb";
 const Createpost = () => {
   return (
     <div className="flex flex-row justify-center h-screen bg-[#000000] text-white">
-      {/* left Screen */}
+      {/* Left Screen */}
       <div className="w-[25%] flex flex-row text-xl gap-10 items-start">
       <div>
         <div className="flex flex-col text-[#868686] gap-4 pb-10">
@@ -41,7 +41,7 @@ const Createpost = () => {
       </div>
       </div>
 
-      {/* right Screen */}
+      {/* Right Screen */}
       <div className=" flex flex-col rounded-lg w-[40%] bg-[#0d0d0d] gap-4 px-6 pt-2">
         <div className="text-xl text-center font-bold">Create Post</div>
         <form className="flex flex-col text-xl  gap-10">

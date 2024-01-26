@@ -2,7 +2,7 @@ import React from "react";
 import { TbCirclePlus } from "react-icons/tb";
 import { Link } from "react-router-dom";
 
-const AllPost = () => {
+const AllPosts = () => {
   return (
     <div className="flex flex-row justify-center h-screen bg-[#000000] text-white">
       {/* Left Screen */}
@@ -75,4 +75,4 @@ const AllPost = () => {
   );
 };
 
-export default AllPost;
+export default AllPosts;

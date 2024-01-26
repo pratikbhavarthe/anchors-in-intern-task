@@ -3,10 +3,13 @@ import { Link } from "react-router-dom";
 import { FaRocket } from "react-icons/fa";
 import { FaArrowRight } from "react-icons/fa";
 
-const Home = () => {
+const homePage = () => {
   return (
     <div className="h-screen bg-black text-white pt-20">
-      
+      {/* <div className="flex items-center justify-start font-bold gap-6 p-4 text-xl pb-20 mb-20 ">
+        <HiSquares2X2 />
+        <div className="font-bold">ANONYMOUS</div>
+      </div> */}
       <div className="flex justify-center mb-10">
         <div className=" flex items-center justify-center gap-4 border rounded-full border-[#292929] px-8 p-2">
           <FaRocket />
@@ -39,4 +42,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default homePage;
